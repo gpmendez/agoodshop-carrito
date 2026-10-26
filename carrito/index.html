@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agoodshop Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>agoodshop</h1>
+        <p id="estado" role="status">Cargando productos…</p>
+    </header>
+
+    <main>
+        <section aria-label="Catálogo de productos">
+        <table>
+            <caption>
+                Productos disponibles
+            </caption>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="productos"></tbody>
+        </table>
+        </section>
+        <aside aria-label="Resumen del carrito">
+            <section class="resumen">
+                <h2>Resumen del carrito</h2>
+                <ul id="resumen"></ul>
+                <p>
+                    <span class="etiqueta-total">Total:</span>
+                    <output id="total">0.00 €</output>
+                </p>
+                <button id="vaciar" type="button">
+                    Vaciar carrito
+                </button>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>
